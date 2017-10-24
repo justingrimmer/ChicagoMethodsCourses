@@ -1,0 +1,1335 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+
+\usepackage[pdftex, bookmarksopen=true, bookmarksnumbered=true,
+pdfstartview=FitH, breaklinks=true, urlbordercolor={0 1 1}, citebordercolor={0 1 0}, colorlinks = true]{hyperref}
+
+
+\textheight 9in
+\textwidth 6.5in
+\topmargin -.5in
+\oddsidemargin 0in
+\evensidemargin 0in
+
+\newcommand{\percent}{\ensuremath{\%\;}}
+
+
+
+\begin{document}
+
+\textbf{\huge{Content For Methods Comp}}
+
+\section*{Probability Theory}
+
+
+\subsection*{Books}
+\begin{itemize}
+\item[1)]  Bertsekas, Dimitri P. and Tsitsiklis, John (BT) Introduction to Probability Theory (second edition)
+\item[2)] Ross, Sheldon.  First Course in Probability Theory (8th Edition).  
+\end{itemize}
+
+
+
+
+\section{A Rigorous Model of Probability and Its Properties}
+\begin{itemize}
+\item Axioms of probability
+\item Inclusion/Exclusion
+\item Conditional Probability
+\item Bayes' rule
+\item Independence 
+\end{itemize}
+\textit{Require Reading}
+\begin{itemize}
+\item[-] BT Chapter 1 
+\end{itemize}
+
+
+
+\section{Discrete  and Continuous Random Variables}
+\begin{itemize}
+\item Probability Mass Functions, Probability Density Functions
+\item Cumulative Mass Functions, Cumulative Density Functions
+\item Expectation, Variance
+\item Mass functions/density functions for famous random variables
+\item Functions of random variables. 
+\end{itemize}
+\textit{Required Reading}
+\begin{itemize}
+\item[-] BT Chapter 2 and 3
+\end{itemize}
+
+
+
+
+\section{Joint Distributions} 
+\begin{itemize}
+\item Joint mass functions, joint density functions
+\item Marginalization
+\item Independence of random variables
+\item Expectation, covariance, variance
+\end{itemize}
+\textit{Required reading}
+\begin{itemize}
+\item[-] Handout (Chapter 6, Ross)
+\end{itemize}
+
+\section{Properties of Expectation, Moment Generating Functions, and Transformations}
+
+\begin{itemize}
+\item Change of coordinates
+\item Properties of moment generating functions
+\item Iterated expectations
+\end{itemize}
+textit{Require Readings}
+\begin{itemize}
+\item[-] BT Chapter 4
+\end{itemize}
+
+
+
+
+
+
+\section{Convergence, Limit Theorems, and Inequalities}
+
+\begin{itemize}
+\item Weak Law of Large Numbers
+\item Convergence in Probability
+\item Almost Sure Convergence
+\item Convergence in Distribution
+\end{itemize}
+\textit{Required Readings}
+\begin{itemize}
+\item[-] BT Chapter 5
+\end{itemize}
+
+\clearpage
+
+\setcounter{section}{0}
+\section*{Regression}
+\subsection*{Books}
+
+\begin{itemize}	
+%\item Bertsekas, Dimitri and Tsitsiklis, John. \emph{Introduction to Probability}. 2nd edition.
+\item[] Regression:
+\item Wooldridge, Jeffrey. \emph{Introductory Econometrics}. New York: South-Western. 5th edition.
+\item R. Carter Hill, William E. Griffiths, and Guay C. Lim. \emph{Principles of Econometrics}. 4th edition.
+\item John Fox. \emph{Applied Regression Analysis and Generalized Linear Models}. 2nd edition.
+%\item \href{http://cran.r-project.org/doc/contrib/Owen-TheRGuide.pdf}{Owen. \emph{The R Guide}. At: http://cran.r-project.org/doc/contrib/Owen-TheRGuide.pdf}
+%\item \href{http://cran.r-project.org/doc/manuals/R-intro.pdf}{Venables and Smith. \emph{An Introduction to R}. At: http://cran.r-project.org/doc/manuals/R-intro.pdf}
+%\item \href{http://cran.r-project.org/doc/contrib/Verzani-SimpleR.pdf}{Verzani. \emph{Simple R}. At: http://cran.r-project.org/doc/contrib/Verzani-SimpleR.pdf}
+%\item Freedman, David, Robert Pisani, and Roger Purves. \emph{Statistics}. 4rd Edition. New York: Norton. (statistics basics)
+\item Andrew, Gelman and Jennifer Hill. \emph{Data Analysis Using Regression and Multilevel/Hierarchical Models}. Cambridge University Press. (regression modeling)
+%\item Gill, Jeff. \emph{Essential Mathematics for Political and Social Research}. 1st Edition. 2nd printing. New York: Cambridge University Press.
+\item[] Math and Probability
+\item Simon, Carl and Blume, Lawrence. \emph{Mathematics for Economists}. New York: Norton.
+\item  Bertsekas, Dimitri P. and Tsitsiklis, John (BT) Introduction to Probability Theory (second edition)
+%\item [] Visualization:
+%\item Cleveland, William S. \emph{Visualizing Data}. Summit, NJ: Hobart Press.
+%\item Tufte, Edward. \emph{The Visual Display of Quantitative Information, 2nd Edition}. Cheshire, CN: Graphics Press.
+
+\item[] Computing:
+\item Paul Teetor. 2011. \emph{R Cookbook}. O'Reilly Media.
+\item Fox, John and Sanford Weisberg. \emph{An R Companion to Applied Regression}. 2nd ed. (R, with focus on regression modeling)
+\item Murrell, Paul. \emph{R Graphics}. Chapman \& Hall.
+\item Wickham, Hadley. \emph{ggplot2: Elegant Graphics for Data Analysis}. Springer.
+\item Sarkar, Deepayan. \emph{Lattice: Multivariate Data Visualization with R}. Springer.
+\end{itemize}
+
+%\item Agresti, Alan and Finlay, Barbara. 1997. \emph{Statistical Methods for the Social Sciences} Upper Saddle River, NJ: Prentice Hall.
+
+% \item Weisberg, Sanford. 2005. \emph{Applied Linear Regression}. 3rd Edition. Hoboken, NJ: John Wiley.
+
+%\item Kennedy, Peter. 2003. \emph{A Guide to Econometrics}. 5th Edition. Malden. Blackwell.
+%\item Wonnacott, Thomas H. and Ronald J. Wonnacott. 1990. \emph{Introductory Statistics}. 5th Edition. New York: Wiley.
+  %\item Pindyck, Robert S. and Daniel L. Rubinfeld. 1998. \emph{Econometric
+ % Models and Economic Forecasts}. 4th Edition. Boston: McGraw Hill.
+%  \item Dalgaard, Peter. 2002. \emph{Introductory Statistics with
+% R}. New York: Springer.
+%  \item Venables, W.N. and B.D. Ripley. 2002. \emph{Modern Applied
+%    Statistics with S-PLUS}. New York: Springer
+% \item Gonick, Larry and Smith, Woollcott. 1993. \emph{The Cartoon Guide to Statistics} New York: Harper.
+
+
+%\section{Introduction}
+%
+%\begin{itemize}
+%  \item Overview and Course Requirements
+%%  \item Examples of Statistical Inference in Political Science
+%  \item Course Outline
+%\end{itemize}
+
+%\textit{Required Readings:}
+%\begin{itemize}
+%  \item Fox97, Chapter 1
+%  \item Fox02, Preface, Sections 1.1 and 1.3
+%  \item Cleveland, Preface, Chapter 1
+%  \item Achen, Chapter 1
+%\end{itemize}
+%
+%\textit{Optional Readings:}
+%\begin{itemize}
+%\item Agresti and Finlay, Chapters 1 and 2
+%  \item Freedman, et al., Chapters 1 and 2
+%  \item Barnett, Vic. 1999. \emph{Comparative Statistical Inference}. New York: Wiley.
+%  \item Achen, Christopher and Larry Bartels. 2004. ``Musical Chairs: Pocketbook Voting and the Limits of Democratic Accountability.'' Paper presented at the 2004 Annual Meeting of the American Political Science Association (available on course website).
+%\end{itemize}
+
+%\section{Elementary Probability Theory}
+%\begin{itemize}
+%  \item Why Do We Need Probability?
+%  \item Probability Axioms
+%  \item Marginal, Joint and Conditional Probability
+%  \item Law of Total Probability
+%  \item Bayes' Rule
+%  \item Independence
+%\end{itemize}
+%\textit{Required Readings:}
+%\begin{itemize}
+%  \item Bertsekas and Tsitsiklis, Chapter 1
+%  \item Wooldridge, Appendix A
+%\end{itemize}
+%
+%\textit{Required Readings:} \begin{itemize}
+% \item Gill, Chapters 7, 8
+%  \item Fox97 Appendix D.1-D.4%,  D.5-D.5.2
+%\end{itemize}
+%[I might include the elementary probability chapters from Jeff Gill's book as well]
+%\textit{Optional Readings:} \begin{itemize}
+%  \item Gonick and Smith, Chapters 2-5
+%  \item Wooldridge Appendix B
+%  \item Freedman et al., Chapters 13-15
+% \item Wonnacott \& Wonnacott, Sections 3.1-3.6, 4.1-4.5, 5.1-5.4, 6.1-6.3
+% \item Diaconis, Persi and Mosteller, Frederick. 1989. ``Methods for Studying Coincidences.'' \emph{JASA} 84: 853-861.
+%  \item Gelman, Andrew; Gary King; and John
+ %   Boscardin. 1998. ``Estimating the Probability of Events that Have
+ %   Never Ocurred: When is Your Vote Decisive?.'' \emph{JASA}. 93:
+ %   1-9. (available via JSTOR)
+%\end{itemize}
+
+%\section{Random Variables and Probability Distributions}
+%\begin{itemize}
+%  \item Discrete and Continuous Random Variables
+%  \item Measures of Location
+%  \item Measures of Dispersion
+%  \item Probability Distributions
+%\end{itemize}
+%\textit{Required Readings:}
+%\begin{itemize}
+%  \item Bertsekas and Tsitsiklis, Chapters 2.1--2.4 \& 3.1--3.3
+%  \item Wooldridge, Appendix B.1 \& B.3
+%\end{itemize}
+%
+%
+%\section{Multiple Random Variables}
+%\begin{itemize}
+%  \item Joint and Conditional Distributions
+%  \item Conditional Expectation
+%  \item Covariance and Independence
+%\end{itemize}
+%\textit{Required Readings:}
+%\begin{itemize}
+%  \item Bertsekas and Tsitsiklis, Chapters 2.5--2.8, 3.4--3.7, 4.2 \& 4.3
+%  \item Wooldridge, Appendix B.2 \& B.4--B.5
+%\end{itemize}
+
+
+\section{Univariate Statistical Inference}
+
+\subsection{Point Estimation}
+\begin{itemize}
+   \item Properties of Estimators
+   \item Sampling Distribution
+   \item Elementary Asymptotic Theory
+\end{itemize}
+\textit{Required Readings:}
+\begin{itemize}
+  \item Wooldridge, Appendix C1-C4
+  \item Unless you are well familiar with this material you need to review: Wooldridge, Appendix A \& B
+\end{itemize}
+
+\subsection{Interval Estimation}
+
+\begin{itemize}
+   \item Confidence Intervals
+\end{itemize}
+\textit{Required Readings:}
+\begin{itemize}
+  \item Wooldridge, Appendix C5
+\end{itemize}
+\subsection{Hypothesis Testing}
+\begin{itemize}
+   \item Logic of Statistical Testing
+   \item p-Values
+\end{itemize}
+\textit{Required Readings:}
+\begin{itemize}
+  \item Wooldridge, Appendix C6-C7 
+\end{itemize}
+
+\subsection{Bootstrap Inference}
+
+\begin{itemize}
+  \item Non-parametric boostrap
+  \item Block bootstrap
+  \end{itemize}
+\textit{Readings:}
+\begin{itemize}
+  \item Bradley Efron and R.J. Tibshirani, An Introduction to the Bootstrap(Chapman \& Hall/CRC Monographs on Statistics \& AppliedProbability, 1993).\item A. C. Davison and D. V. Hinkley, Bootstrap Methods and theirApplication (Cambridge Series in Statistical and ProbabilisticMathematics, 1997).
+\end{itemize}
+
+
+%\textit{Required Readings:} \begin{itemize}
+% \item Agresti and Finlay, Sections 4.3-5.3, 6.1 - 6.5
+% \item Wooldridge, Appendix C
+%  \item Fox97 Appendix D.5-D.5.2
+%  \item American National Election Studies website (http://www.electionstudies.org/)
+%\end{itemize}
+
+%\textit{Optional Readings:} \begin{itemize}
+%  \item Gonick and Smith, Chapters 6-8
+%  \item Freedman et al., Chapters 16-26
+%\end{itemize}
+
+
+\section{What is Regression?}
+
+\begin{itemize}
+\item Nonparametric Regression
+\item Linear Regression
+\item Bias-Variance Tradeoff
+\end{itemize}
+\textit{Required Readings:} \begin{itemize}
+  \item Wooldridge, Chapter 1
+\end{itemize}
+
+%\textit{Required Readings:} \begin{itemize}
+%  \item Fox97, Sections 2-3.2
+%  \item Fox02, Sections 2-3.2
+% \item Tatem, Andrew J; Carlos A. Guerra; Peter M. Atkinson; and
+%   Simon I. Hay. 2004. ``Momentous Sprint at the 2156 Olympics.''
+%    \emph{Nature} 431 (30 September): 525. (available at course website)
+%\end{itemize}
+
+%\textit{Optional Readings:} \begin{itemize}
+% \item Cleveland, Chapter 2 pp. 16 - 33 and Chapter 3 pp. 86-101
+%  \item Achen, Chapter 2
+%   \item Tufte, Edward. 2001. \emph{The Visual Display of Quantitative Information, 2nd Edition}. Cheshire, CN: Graphics Press.
+%  \item Cleveland, William S. and Robert McGill. 1987. ``Graphical
+ %Perception: The Visual Decoding of Quantitative Information on
+ % Graphical Displays of Data.'' (with discussion) \emph{JRSS A}. 150:
+%  192-229.  (available via JSTOR)
+%  \item Cleveland, William S. and Robert McGill. 1984. ``Graphical
+%  Perception: Theory, Experimentation, and Application to the
+%  Development of Graphical Methods.'' \emph{JASA}. 79: 531-554
+%  (available via JSTOR)
+ % \item Cleveland, William S.; Persi Diaconis; and Robert
+%  McGill. 1982. ``Variables on Scatterplots Look More Highly
+%  Correlated When the Scales are Increased.'' \emph{Science}. 216:
+%  1138-1141 (available via JSTOR)
+% \end{itemize}
+
+
+%\section{Visualization}
+
+%\textit{Required Readings:} \begin{itemize}
+ % \item Cleveland, Chapters 4, 5, and 6 (review chapters 2 and 3)
+%\end{itemize}
+%\begin{Background Reading} % \item Freedman et al., Chapters 3-7
+%\item Cleveland, William S. 1994. \emph{The Elements of Graphing
+ % Data}. Summit, NJ: Hobart Press.
+%\end{Background Reading}
+
+
+%\textit{Optional Readings:} \begin{itemize}
+  %\item Cleveland, William S. and Robert McGill. 1987. ``Graphical
+ % Perception: The Visual Decoding of Quantitative Information on
+  %Graphical Displays of Data.'' (with discussion) \emph{JRSS A}. 150:
+  %192-229.  (available via JSTOR)
+  %\item Cleveland, William S. and Robert McGill. 1984. ``Graphical
+  %Perception: Theory, Experimentation, and Application to the
+  %Development of Graphical Methods.'' \emph{JASA}. 79: 531-554
+  %(available via JSTOR)
+  %\item Cleveland, William S.; Persi Diaconis; and Robert
+  %McGill. 1982. ``Variables on Scatterplots Look More Highly
+  %Correlated When the Scales are Increased.'' \emph{Science}. 216:
+  %1138-1141 (available via JSTOR)
+  %\item Trellis Display homepage at Bell Labs\\ \texttt{http://cm.bell-labs.com/cm/ms/departments/sia/project/trellis/}
+%\end{itemize}
+
+
+
+\section{Simple Linear Regression}
+
+\begin{itemize}
+\item Mechanics of Ordinary Least Squares
+\item Linear Model Assumptions
+\item Properties of the Least Squares Estimator
+\item Gauss-Markov Theorem
+\item Testing and Confidence Intervals
+\item Large Sample Inference
+\end{itemize}
+\textit{Required Readings:} \begin{itemize}
+  \item Wooldridge, Chapter 2
+  \item  Hill, Griffiths, and Lim, Chapters 2 \& 3 
+\end{itemize}
+%\textit{Optional Readings:} \begin{itemize}
+%\item Tatem, Andrew J; Carlos A. Guerra; Peter M. Atkinson; and Simon I. Hay. 2004. ``Momentous Sprint at the 2156 Olympics.'' \emph{Nature} 431 (30 September): 525.
+%\end{itemize}
+
+
+%\textit{Required Readings:} \begin{itemize}
+%  \item Fox97, Sections 5.1 and 6.1
+%  \item Fox02, Section 4.1.1
+%  \item Wooldridge, Chapter 2
+%  \item Fox97, Sections 4-4.4
+%  \item Fox02, Section 3.4
+
+%\item Osberg, Lars and Timothy Smeeding. 2004. `` `Fair' Inequality? An International Comparison of Attitudes to Pay Differentials'' \emph{American Sociological Review}, 71: 450-473.
+ %  \item Epstein, Lee and Carol Mershon. 1996. ``Measuring Political
+   % Preferences.'' \emph{American Journal of Political Science}, 40:
+   % 261-294. (available via JSTOR)
+%\end{itemize}
+%\textit{Optional Readings:} \begin{itemize}
+%  \item Freedman et al., Chapters 8-12
+%\item Wonnacott \& Wonnacott, Chapters 11 and 12
+%  \item Tufte, Edward. 1974. \emph{Data Analysis for Politics and
+%    Policy}. Englewood Cliffs, NJ: Prentice-Hall. Chapter 3.
+%    \item Stigler, Steven M. 1986. \emph{The History of Statistics: The
+%  Measurement of Uncertainty before 1900}. Cambridge, MA: Harvard
+%  University Press. Chapters 1,8
+%\end{itemize}
+
+\section{Linear Regression with Two Regressors}
+\subsection{Mechanics of Regression with Two Regressors}
+\begin{itemize}
+\item Motivation for Multiple Regression
+\item Mechanics for OLS with Two Regressors
+\end{itemize}
+\textit{Required Readings:} \begin{itemize}
+  \item Wooldridge, Chapter 3
+\end{itemize}
+\begin{itemize}
+\item Inference for OLS with Two Regressors
+\end{itemize}
+\textit{Required Readings:} \begin{itemize}
+  \item Wooldridge, Chapter 4 \& 5
+\end{itemize}
+
+\subsection{Omitted Variables and Multicollinearity}
+\begin{itemize}
+\item Omitted Variable Bias
+\item Multicollinearity
+\end{itemize}
+\textit{Required Readings:} \begin{itemize}
+  \item Wooldridge, Chapters 6
+      \item Alternative: Hill, Griffiths, and Lim, Chapter 6 (course website)
+\end{itemize}
+\subsection{Dummy Variables, Interactions and Polynomials}
+\begin{itemize}
+\item Dummy Variables
+\item Interaction Terms
+\item Polynomials and Logarithms
+\end{itemize}
+\textit{Required Readings:} \begin{itemize}
+  \item Wooldridge, Chapter 7
+    \item Hill, Griffiths, and Lim, Chapter 4 \& 7
+\end{itemize}
+
+%\textit{Optional Readings:} \begin{itemize}
+%\item Brambor, Thomas,  William Clark, and Matt Golder. 2005. ``Understanding Interaction Models: Improving Empirical Analyses.'' \emph{Political Analysis}. 13: 1-20.
+%\item Braumoeller, Bear. 2004. ``Hypothesis Testing and Multiplicative Interaction Terms.'' \emph{International Organization}. 58: 807-820.
+%\end{itemize}
+
+
+\section{Multiple Linear Regression}
+\subsection{Mechanics of Multiple Regression}
+\begin{itemize}
+\item Review of Matrix Algebra and Vector Calculus
+\item Mechanics of Multiple Linear Regression
+\end{itemize}
+\subsection{Statistical Inference with Multiple Regression}
+\begin{itemize}
+\item Statistical Inference for Multiple Linear Regression
+\item Testing Multiple Hypotheses
+\end{itemize}
+\textit{Required Readings:} \begin{itemize}
+  \item Wooldridge, Appendix D \& E
+\end{itemize}
+
+%\textit{Required Readings:} \begin{itemize}
+%\item Simon and Blume. 1994. \emph{Mathematics for
+%  Economists}. Sections 8.1-8.4 (handout)
+% \item Gill Chapters 3, 4, 5, 6
+
+% \item Gill. 2006. Chapter 3.1, 3.2 pp. 82-88 (81-86 on web)
+ %\item Gill. 2006. Chapter 3.3, 3.4 pp. 100-112 (102-110 on web)
+ %\item Gill. 2006. Chapter 3.5
+ %\item Gill. 2006. Chapter 4.3 pp. 139-142 (132-134 on web)
+ %\item Gill. 2006. Chapter 4.6
+ %\item Fox97, Appendix B
+%\item Fox97 Section 10.1,10.2
+% \item Fox97, Appendices C.1, C.3
+%  \item Fox97, Sections 9.1 pp. 204-206, 9.2
+%  \item Fox02, Sections 1.2 and 4.1
+
+  %\item Tsebelis, George. 1999. ``Veto Players and Law Production in
+   % Parliamentary Democracies: An Empirical Analysis." \emph{The
+     % American Political Science Review}, 93: 591-608. (available via JSTOR)
+%\end{itemize}
+
+%\section{Properties of the Least Squares Estimator, Causality, and Measurement Error - Nov. 19}
+
+%\textit{Required Readings:} \begin{itemize}
+
+%\end{itemize}
+%\textit{Optional Readings:} \begin{itemize}
+%  \item Freedman et al., Chapters 26-29
+%  \item Achen, Chapter 3
+%  \item Simon and Blume. 1994. \emph{Mathematics for
+%  Economists}. Sections 8.1-8.4
+% \item Cleveland. Chapter 4
+%\end{itemize}
+
+%\section{Causal Inference for Least Squares Regression}
+
+%\textit{Required Readings:} \begin{itemize}
+%\item Pearl, Judea \emph{Causality} (Handout)
+%\end{itemize}
+
+
+%\textit{Required Readings:} \begin{itemize}
+%  \item Fox97, Sections 6.2-6.5, 9.3-9.7
+%  \item Fox02, Sections 4.5 and 4.6
+%  \item Braumoeller, Bear. 2004. ``Hypothesis Testing and
+%  Multiplicative Interaction Terms.'' \emph{International
+%  Organization}. 58: 807-820.
+%\end{itemize}
+%\textit{Optional Readings:} \begin{itemize}
+%\item Wooldridge, Chapters 3,4,5
+% \item Kennedy, Appendix A, 418-422
+%  \item Freedman et al., Chapters 26-29
+%   \item Achen, Chapter 4
+%\end{itemize}
+
+%\section{Causal Inference for Least Squares Regression}
+
+%\textit{Required Readings:} \begin{itemize}
+%\item Pearl, Judea \emph{Causality} (Handout)
+%\end{itemize}
+
+%\section{Dummy Variables, Interaction Terms, and Polynomial Regression - Dec. 17}
+
+%\textit{Required Readings:} \begin{itemize}
+ % \item Fox97, Chapter 7
+   %\item Fox97, Section 14.2-14.2.1
+  %\item Fox02, Section 4.2
+  %\item Brambor, Thomas,  William Clark, and Matt
+  %Golder. 2005. ``Understanding Interaction Models: Improving
+  %Empirical Analyses.'' \emph{Political Analysis}. 13: 1-20.
+  %\item Braumoeller, Bear. 2004. ``Hypothesis Testing and
+  %Multiplicative Interaction Terms.'' \emph{International
+  %Organization}. 58: 807-820.
+
+ % \item Gelman, Andrew and Gary King. 1990. ``Estimating the
+  %Incumbency Advantage without Bias.'' \emph{AJPS}. 34:
+  %1142-1164. (available via JSTOR)
+  %\item Wilkerson, John D. 1999. `` `Killer' Amendments in Congress."
+    %\emph{The American Political Science Review}, Vol. 93:
+    %535-552. (available via JSTOR)
+%\end{itemize}
+
+
+\section{Diagnosing and Fixing Problems in Linear Regression}
+\subsection{Outliers and Influential Observations}
+	\begin{itemize}
+	\item Plotting Residuals
+	\item Standardized and Studentized Residuals
+	\item Added Variable and Component Residual Plots
+	\item Leverage and Influence
+\end{itemize}
+\textit{Required Readings:} 
+	\begin{itemize}
+  \item Fox, Chapter 11 
+\end{itemize}
+	
+\subsection{Heteroskedasticity, Serial Correlation and Clustering}
+	\begin{itemize}
+	\item Weighted Least Squares
+	%\item Generalized Least Squares
+	\item Heteroskedasticity-robust Standard Errors
+	\item Cluster-robust Standard Errors
+	\item Autocorrelation
+\end{itemize}
+%	\end{itemize}
+%\subsection{Measurement Error}
+%	\begin{itemize}
+%	\item Types of Measurement Errors
+%	\item Measurement Error in the Dependent Variable
+%	\item Measurement Error in an Independent Variable
+%	\end{itemize}
+\textit{Required Readings:} \begin{itemize}
+  \item Wooldridge, Chapters 8--9
+\item  Fox, Chapter 12
+  \item Hill, Griffiths, and Lim, Chapter 8 
+  \end{itemize}
+%\textit{Optional Readings:} \begin{itemize}
+% \item Jackman, Robert W. 1987.``The Politics of Economic Growth in
+%     the Industrial Democracies, 1974-80: Leftist Strength or North Sea
+%     Oil?'' \emph{The Journal of Politics}, Vol. 49, No. 1,
+%     pp. 242-256. (available via JSTOR)
+%        \item Wand, Jonathan; Kenneth Shotts; Jasjeet Sekhon; Walter Mebane;
+%    Michael Herron; and Henry Brady. 2001 ``The Butterfly Did It: The
+%    Aberrant Vote for Buchanan in Palm Beach County, Florida.''
+%    \emph{APSR}. 95: 793-810.
+%\end{itemize}
+
+
+%\textit{Required Readings:} \begin{itemize}
+%  \item Fox97, 12.2, 14.1
+%  \item Fox02, Sections 6.3
+%  \item Fox02, Appendix: ``Time-Series Regression and Generalized Least Squares''
+%    \item Beck, Nathaniel and Katz, Jonathan. 1995. ``What to do (and not to do) with Time Series Cross-Sectional Data.'' \emph{APSR}. 89:
+%  634-647. (available via JSTOR)
+%\end{itemize}
+%\textit{Optional Readings:} \begin{itemize}
+%\item Berk, Kenneth. 1998. ``Regression Diagnostic Plots in 3-D'' \emph{Technometrics}. 40: 39-47.
+%   \item Weisberg, Sanford. 2005. \emph{Applied Linear Regression}. 3rd Edition. Hoboken, NJ: John Wiley.
+% \item Achen, Chapters 5, 6, and 7
+%\item Wooldridge, Chapters 10-12
+%\end{itemize}
+
+
+%\textit{Required Readings:} \begin{itemize}
+%  \item Fox97, Chapter 11
+%  \item Fox02, Section 6.1
+%
+%    \item Fox97, 12.1,12.3,12.4, 12.7
+%  \item Fox02, Sections 6.2, 6.3, and 6.4
+%  (available via JSTOR)
+ % \item Lange, Peter and Geoffrey Garrett. 1985. ``The Politics of
+  %  Growth: Strategic Interaction and Economic Performance in the
+   % Advanced Industrial Democracies, 1974-1980.'' \emph{The Journal of
+   % Politics}. Vol. 47. No. 3. pp. 792-827. (available via JSTOR)
+
+%  \item R. Michael Alvarez, Geoffrey Garrett, and Peter
+  % Lange. 1991. ``Government Partisanship, Labor Organization, and
+   % Macroeconomic Performance.''  \emph{American Political Science
+    %  Review}, Vol 85, No. 2, pp. 539-556. (available via JSTOR)
+%  \item Beck, Nathaniel; Jonathan Katz; R. Michael Alvarez; Geoffrey
+ %  Garrett; and Peter Lange. 1993. ``Government Partisanship, Labor
+    %Organization, and Macroeconomic Performance: A Corrigendum.''
+   % \emph{American Political Science Review} Vol 87 No. 4,
+   % pp. 945-948. (available via JSTOR)
+%\end{itemize}
+
+%\textit{Optional Readings:} \begin{itemize}
+%  \item Weisberg, Sanford. 2005. \emph{Applied Linear Regression}. 3rd Edition. Hoboken, NJ: John Wiley.
+%   \item Hastie, Trevor; Robert Tibshirani; and Jerome
+%  Friedman. 2001. \emph{The Elements of Statistical Learning}. New
+%  York: Springer.
+%  \item Hastie, Trevor and Rob Tibshirani. 1990. \emph{Generalized
+%    Additive Models}. London: Chapman \& Hall.
+
+%\end{itemize}
+%
+%\section{Extensions and Advanced Topics (time permitting)}
+%\begin{itemize}
+%\item Nonlinear Regression Models
+%	\begin{itemize}
+%	\item Logit and Probit Models
+%	\item Generalized Linear Models
+%	\end{itemize}
+%\item Semiparametric and Nonparametric Regression Models
+%	\begin{itemize}
+%	\item Generalized Additive Models
+%	\end{itemize}
+%\end{itemize}
+%\textit{Required Readings:} \begin{itemize}
+%  \item Wooldridge, Chapter 17.1
+%\end{itemize}
+%\textit{Optional Readings:}
+%\begin{itemize}
+% \item Beck, Nathaniel and Simon Jackman. 1998. ``Beyond Linearity by
+%  Default: Generalized Additive Models.'' \emph{AJPS}. 42:
+%  596-627.
+%\end{itemize}
+
+%\textit{Required Readings:} \begin{itemize}
+%  \item Fox97, Chapter 14.2-14.4
+%  %   \item Fox97, Sections 16.1-16.1.3
+%   \item Fox97, Sections 15.1-15.1.4
+%   \item Fox97, Sections 5.1, 5.2
+%  \item Fox02, Online Appendices
+ % \item Venables and Ripley. 2002. pp. 156-163 (handout)
+ % (available via JSTOR)
+  %\item Western, Bruce. 1995. ``Concepts and Suggestions for Robust
+  %Regression Analysis.'' \emph{AJPS}. 39: 786-817. (available via JSTOR)
+
+%  \item Quinn, Kevin ``Visualizing Multivariate Outliers and Leverage
+%    Points.'' (handout)
+%\end{itemize}
+%\textit{Optional Readings:} \begin{itemize}
+%
+%  \item Hampel, Frank. 1974. ``The Influence Curve and Its Role in
+%  Robust Estimation.'' \emph{JASA}. 69: 383-393.
+%  \item Hampel, F.R., E.M. Ronchetti, P.J. Rousseeuw, and W.A. Stahel,
+%  1986. \emph{Robust Statistics: The Approach Based on Influence
+%  Functions.} New York: Wiley.
+%  %\item Huber, P. J. 1964. ``Robust Estimation of a Location
+%  Parameter.'' \emph{Annals of Mathematical Statistics}. 35: 73-101.
+%  \item Rousseeuw, R.J. and A.M. Leroy. 1987. \emph{Robust Regression
+%  and Outlier Detection}. New York: Wiley.
+%  \item Stefanski, L.A. 1991. ``A Note on High-Breakdown Estimators.''
+%  \emph{Statistics and Probability Letters}. 11: 353-358.
+%\end{itemize}
+
+
+%\textit{Optional Readings:} \begin{itemize}
+%\item Rousseeuw, Peter J. and Bert C. van Zomeren. 1990. ``Unmasking Multivariate Outliers and Leverage Points (with Discussion).''\emph{JASA}. 85: 633-651.
+%\item Hampel, Frank. 2001. ``Robust Statistics: A Brief Introduction
+%  and Overview.'' \href{http://e-collection.ethbib.ethz.ch/ecol-pool/incoll/incoll\_105.pdf}{Link}.
+%\end{itemize}
+
+
+%\section{Nonparametric Regression and Additive Models Revisited, Bootstrapping, and an Introduction to Logit and Probit - Dec. 17}
+
+%\textit{Required Readings:} \begin{itemize}
+ % \item Fox97, Sections 14.4
+%  \item Fox97, Sections 16.1-16.1.3
+  %\item Fox97, Sections 15.1-15.1.4
+%\item Fox97, Sections 5.1, 5.2
+ % \item Stock and Watson, 2003. Chapter 6 (handout)
+%  \item Friedrich, Robert. 1982. ``In Defense of Multiplicative Terms
+ % in Multiple Regression Equations.'' \emph{American Journal of
+ % Political Science}. 26: 797-833. (available via JSTOR)
+  % \item Neto, Octavio Amorim, and Gary W. Cox. 1997. ``Electoral
+   % Institutions, Cleavage Structures, and the Number of Parties."
+   % \emph{American Journal of Political Science}, 41:
+   % 149-174. (available via JSTOR)
+  %\item Kousser, T. ``Retrospective Voting and Strategic Behavior in European
+ %   Parliament Elections.''\emph{Electoral Studies},
+   % Vol. 23, (2004), pp. 1-21.
+ % \item Venables and Ripley. 2002. Chapter 8. (handout)
+%\end{itemize}
+
+
+%\section{Introduction to Logit and Probit Models}
+
+%\textit{Required Readings:} \begin{itemize}
+%\item Fox97, Chapter 15.1-15.1.4
+%\item Fox97, Sections 5.1, 5.2
+%\end{itemize}
+
+
+
+%King, Gary. 1986. "How Not to Lie With Statistics: Avoiding Common Mistakes in Quantitative Political Science." American Journal of Political Science 30(3):666-87.
+
+%King, Gary. 1991. "Truth is Stranger than Predication, More Questionable than Causal Inference." American Journal of Political Science 35(4):1047-53.
+
+\clearpage
+
+
+\section*{Causal Inference}
+\setcounter{section}{0}
+
+\subsection*{Books}
+\begin{itemize}
+  \item Angrist, Joshua D. and J\"orn-Steffen Pischke. 2009. \emph{Mostly Harmless Econometrics: An Empiricist's Companion}. Princeton University Press. (A standard reference for applied researchers for most topics covered in the first part of the course.)
+  \item Morgan, Stephen L. and Christopher Winship. 2015. \emph{Counterfactuals and Causal Inference: Methods and Principles for Social Research}, Second Edition. Cambridge University Press. 
+  \item Wooldridge, Jeffrey. 2010. {\it Econometric Analysis of Cross Section and Panel Data}, 2nd ed. MIT Press.
+\item Imbens, Guido and Donald B. Rubin. 2015. {\it Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction}.1st Edition. Cambridge University Press.
+\item Gerber, Alan S., and Donald P. Green. 2012. \textit{Field Experiments}. W. W. Norton. 
+\item Rosenbaum, Paul R. 2009. \textit{Design of Observational Studies}.  Springer Series in Statistics.
+    \item Rosenbaum, Paul R. 2002. \textit{Observational Studies}. Springer-Verlag. 2nd edition.
+  \item Pearl, Judea. 2009. Causality: Models, Reasoning, and Inference. New York: Cambridge University Press. 2nd edition. 
+        \item Manski, Charles F. 1995. \textit{Identification Problems in the Social Sciences}. Cambridge: Harvard University Press.
+  \item Rubin, Donald. 2006. \textit{Matched Sampling for Causal Effects}. Cambridge University Press.
+\end{itemize}
+
+
+%\textbf{Optional Books}
+%\begin{itemize}
+%\item \emph{The following books are optional but may prove
+%  useful for additional coverage of some of the
+%  course topics.}
+%%\item \emph{Reference Book for Panel Methods}
+%%\begin{itemize}
+%%  \item Wooldridge, Jeffrey M. 2002. Econometric Analysis of Cross Section and Panel Data. MIT Press.
+%%\end{itemize}
+%\item  \emph{Causal Inference}
+%\begin{itemize}
+%\item Rosenbaum, Paul R. 2009. \textit{Design of Observational Studies}.  Springer Series in Statistics.
+%    \item Rosenbaum, Paul R. 2002. \textit{Observational Studies}. Springer-Verlag. 2nd edition.
+%  \item Pearl, Judea. 2009. Causality: Models, Reasoning, and Inference. New York: Cambridge University Press. 2nd edition.
+%        \item Manski, Charles F. 1995. \textit{Identification Problems in the Social Sciences}. Cambridge: Harvard University Press.
+%\end{itemize}
+%\item  \emph{Matching}
+%\begin{itemize}
+%  \item Rubin, Donald. 2006. \textit{Matched Sampling for Causal Effects}. Cambridge University Press.
+%\end{itemize}
+%\item  \emph{Model Based Inference}
+%\begin{itemize}
+%  \item Cameron, Colin and Pravin Trivedi. 2005. {\it
+%        Microeconometrics: Methods and Applications}. Cambridge
+%      University Press. (Slightly less standard, but covers most of the topics throughout the
+%      course.)
+%        \item McCullagh, P. and J. A. Nelder. 1989. {\it Generalized Linear Models}, 2nd ed. Chapman and Hall/CRC. (Generalized linear models)
+%  \item Efron, Bradley and Robert J. Tibshirani. 1994. {\it An
+%      Introduction to the Bootstrap}. Chapman and Hall/CRC. (Bootstrap)
+%  \item Kalbfleisch, John D. and Ross L. Prentice. 2002. {\it The Statistical
+%  Analysis of Failure Time Data}, 2nd ed. Wiley. (Survival analysis)
+%\end{itemize}
+%\end{itemize}
+
+\section{The Potential Outcome Model}
+
+\begin{itemize}
+\item Counterfactual Responses and the Fundamental Identification Problem
+\item Estimands and Assignment Mechanisms
+\item Heterogeneity and Selection
+\end{itemize}
+
+\emph{Readings}
+($\star$) indicates required
+\begin{itemize}
+\item Morgan and Winship: Chapter 1-2. ($\star$)
+\item Angrist and Pischke: Chapter 1. ($\star$)
+\item Holland, Paul W. 1986.  \href{http://www.jstor.org/stable/2289064} {Statistics and Causal Inference}. \textit{Journal of the American Statistical Association} 81(396): 945-960. ($\star$)
+\item Sekhon, Jasjeet S. 2004.  \href{http://journals.cambridge.org/abstract_S1537592704040150} {Quality Meets Quantity: Case Studies, Conditional Probability and Counterfactuals}. \textit{Perspectives on Politics} 2 (2): 281-293.
+\end{itemize}
+
+
+\section{Randomized Experiments}
+
+\begin{itemize}
+\item Identification of Causal Effects under Randomization
+\item Implementation, Estimation, Diagnostics, Blocking
+\item Threats to Validity
+\end{itemize}
+
+\emph{Readings: Theory of Experiments}
+\begin{itemize}
+\item  Angrist and Pischke: Chapter 2. ($\star$)
+\item Rosenbaum, Paul R. 2002. \textit{ Observational Studies}. Springer-Verlag. 2nd edition. Chapter 2.
+\item Gerber, Alan S., and Donald P. Green. 2012. \textit{Field Experiments}. W. W. Norton. Chapters 2-4.
+\item Neyman, Jerzy. 1923 [1990]. \href{http://www.jstor.org/stable/2245382}{On the Application of Probability Theory to Agricultural Experiments. Essay on Principles. Section 9}. \textit{Statistical Science} 5 (4): 465-472. Trans. Dorota M. Dabrowska and Terence P. Speed.
+\item Lin, Winston. Forthcoming. \href{http://arxiv.org/pdf/1208.2301.pdf}{Agnostic Notes on Regression Adjustments to Experimental Data: Reexamining Freedman's Critique}. \textit{The Annals of Applied Statistics}.
+\end{itemize}
+
+\emph{Readings: Application of Experiments}
+\begin{itemize}
+  \item Olken, Benjamin. 2007. \href{http://www.journals.uchicago.edu/doi/abs/10.1086/517935}{Monitoring corruption : Evidence from a field experiment in Indonesia}. \textit{Journal of Political Economy} 115 (2): 200-249.
+  \item Gerber, Alan S., Donald P. Green and Christopher W. Larimer. 2008. \href{http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=1720748}{Social Pressure and Voter Turnout: Evidence from a Largescale Field Experiment}. \textit{American Political Science Review} 102 (1): 1-48. ($\star$)
+\item Wantchekon, Leonard. 2003. \href{http://www.jstor.org/stable/25054228} {Clientelism and Voting Behavior: Evidence from a Field Experiment in Benin} \textit{World Politics} 55 (3), April: 399-422.
+  \item Chattopadhyay, Raghabendra and Esther Duflo. 2004.  \href{http://www.jstor.org/stable/3598894} {Women as Policy Makers: Evidence from a Randomized Policy Experiment in India}. \textit{Econometrica}, 72 (5): 1409-1443.
+  \end{itemize}
+
+  \emph{Readings: Application of Natural Experiments}
+\begin{itemize}
+%\item DellaVigna, Stefano, and Ethan Kaplan. 2007.  \href{http://www.mitpressjournals.org/doi/abs/10.1162/qjec.122.3.1187} {The Fox News Effect: Media Bias and Voting}. Quarterly Journal of Economics 122(3): 1187-1234.
+\item Hyde, Susan D. 2007.  \href{http://muse.jhu.edu/journals/world_politics/v060/60.1.hyde.html} {The Observer Effect in International Politics: Evidence
+from a Natural Experiment}. \textit{World Politics} 60(1): 37-63. ($\star$)
+\item Ferraz, Claudio, and Federico Finan. 2008.  \href{http://qje.oxfordjournals.org/content/123/2/703.short%E2%80%8E} {Exposing Corrupt Politicians: The
+Effects of Brazil's Publicly Released Audits on Electoral Outcomes}. \textit{Quarterly
+Journal of Economics} 123(2): 703-45.
+\item Ho, Daniel E., and Kosuke Imai. 2008.  \href{http://poq.oxfordjournals.org/cgi/content/abstract/72/2/216} {Estimating Causal Effects of Ballot
+Order from a Randomized Natural Experiment: The California Alphabet Lottery},
+1978-2002.\textit{ Public Opinion Quarterly} 72(2): 216-40.
+\item Dunning, Thad. 2012. \textit{Natural Experiments in the Social Sciences: A Design-Based Approach}. New York: Cambridge University Press.
+\end{itemize}
+
+\emph{Readings: Experiments Review Articles}
+\begin{itemize}
+\item Palfrey, Thomas. 2009.
+  \href{http://arjournals.annualreviews.org/doi/pdf/10.1146/annurev.polisci.12.091007.122139}
+  {Laboratory Experiments in Political Economy}.\textit{ Annual Review of
+  Political Science} 12: 379-388.
+\item Druckman, James N., Donald P. Green, James H. Kuklinski, and
+  Arthur Lupia. 2006.
+  \href{http://journals.cambridge.org/abstract_S0003055406062514} {The
+    Growth and Development of Experimental Research in Political
+    Science}.\textit{ American Political Science Review} 100(4): 627-635.
+\item Green, Donald P., Peter M. Aronow, and Mary C. McGrath. 2012. \href{http://www.tandfonline.com/doi/abs/10.1080/17457289.2012.728223}{Field Experiments and the Study of Voter Turnout}. \textit{Journal of Elections, Public Opinion \& Parties}: 1-22.
+\item Humphreys, Macartan, and Jeremy Weinstein. 2009.
+  \href{http://www.columbia.edu/~mh2245/papers1/HW_ARPS09.pdf} {Field
+    Experiments and the Political Economy of Development}. \textit{Annual
+  Review of Political Science} 12: 367-378.
+\item Harrison, Glenn and John A. List. 2004.
+  \href{http://people.hbs.edu/nashraf/Harrison_Field%20Experiments_2004.pdf}
+  {Field Experiments}. \textit{Journal of Economic Literature}, XLII:
+  1013-1059.
+\item List, John A., and Steven Levitt. 2006. \href{http://pricetheory.uchicago.edu/levitt/Papers/jep%20revision%20Levitt%20%26%20List.pdf}
+  {What Do Laboratory Experiments Tell Us About the Real World?}
+  University of Chicago and NBER.
+\item Gaines, Brian J., and James H. Kuklinski. 2007.
+  \href{http://pan.oxfordjournals.org/cgi/content/abstract/15/1/1}
+  {The Logic of the Survey Experiment Reexamined}. \textit{Political Analysis}
+  15: 1-20.
+\end{itemize}
+
+\emph{Readings: Useful Methodological Guides for Experiments}
+
+\begin{itemize}
+
+\item Duflo, Esther, Abhijit Banerjee, Rachel Glennerster, and Michael Kremer. 2006.  \href{http://economics.mit.edu/files/806}{Using Randomization in Development Economics: A Toolkit}. \textit{Handbook of Development Economics}.
+
+\item Bloom, Howard S. 2008. ``The Core Analytics of Randomized Experiments for Social Research.'' In The SAGE Handbook of Social Research Methods, eds. Pertti Alasuutar, Leonard Bickman, and Julia Brannen. London: SAGE.
+
+\item Bruhn, Miriam, and David McKenzie. 2009. \href{http://pubs.aeaweb.org/doi/pdfplus/10.1257/app.1.4.200}{In Pursuit of Balance: Randomization in Practice in Development Field Experiments}. \textit{American Economic Journal: Applied Economics} 1(4): 200-232.
+
+%\item Gary King, et.al. 2007. \href{http://gking.harvard.edu/gking/files/spd.pdf}{A Politically Robust Experimental Design for Public Policy Evaluation, with Application to the Mexican Universal Health Insurance Program}. Journal of Policy Analysis and Management 26, 3, 479�506.
+
+\item Stanford Administrative Panels for the Protection of Human Subjects\\ \href{http://humansubjects.stanford.edu/\#start}{http://humansubjects.stanford.edu/\#start}
+
+\end{itemize}
+
+\section{Causal Effects under Selection on Observables}
+
+\subsection{Selection on Observables}
+\begin{itemize}
+\item Identification under Selection on Observables
+\item Subclassification
+\end{itemize}
+
+\emph{Readings}
+\begin{itemize}
+\item Morgan and Winship: Chapters 3-4. ($\star$)
+\item Rubin, Donald B. 2008.  \href{http://arxiv.org/pdf/0811.1640}
+  {For Objective Causal Inference, Design Trumps
+    Analysis}. \textit{Annals of Applied Statistics} 2(3):
+  808-840.
+\item Rosenbaum, Paul R. 2002. Observational
+  Studies. Springer-Verlag. 2nd edition. Chapter 3.
+\item Rosenbaum, Paul R. 2005.
+  \href{http://stat.wharton.upenn.edu/~rosenbap/heteroReprint.pdf}
+  {Heterogeneity and Causality: Unit Heterogeneity and Design
+    Sensitivity in Observational Studies}. \textit{The American
+    Statistician} 59: 147-152.
+\item Acemoglu, Daron. 2005.
+  \href{http://economics.mit.edu/files/4468}
+  {Constitutions, Politics, and Economics: A Review Essay on Persson
+    and Tabellini's The Economic Effects of
+    Constitutions}. \textit{Journal of Economic Literature}
+  XLIII: 1025-1048.
+  % \item Cochran, W. G. 1968.
+  %   \href{http://www.jstor.org/stable/2528036} {The Effectiveness of
+  %   Adjustment by Subclassification in Re-moving Bias in
+  %   Observational Studies}, \textit{Biometrics}, vol. 24: 295-313.
+\end{itemize}
+
+\subsection{Matching Methods}
+\begin{itemize}
+\item Covariate Matching, Balance Checks, Properties of Matching Estimators
+\end{itemize}
+
+\emph{Readings: Matching Theory}
+\begin{itemize}
+\item Morgan and Winship: Chapter 5. ($\star$)
+  % \item Morgan and Harding. 2006.
+  %   \href{http://smr.sagepub.com/cgi/content/abstract/35/1/3}
+  %   {Matching Estimators of Causal Effects: Prospects and Pitfalls
+  %   in Theory and Practice}.
+\item Imbens, Guido. 2014. \href{http://www.nber.org/papers/w19959}{Matching Methods in Practice: Three Examples}. \textit{NBER Working Paper 19959}. 
+\item Sekhon, Jasjeet S. 2009.
+  \href{http://arjournals.annualreviews.org/doi/abs/10.1146/annurev.polisci.11.060606.135444}
+  {Opiates for the Matches: Matching Methods for Causal
+    Inference}.\textit{ Annual Review of Political Science} 12:
+  487-508.($\star$)
+\item
+Ho, Daniel E., Kosuke Imai, Gary King, and Elizabeth A. Stuart. 2007.
+  \href{http://pan.oxfordjournals.org/cgi/content/abstract/mpl013v1}
+  {Matching as Nonparametric Preprocessing for Reducing Model
+    Dependence in Parametric Causal Inference}. \textit{Political
+    Analysis} 15: 199-236.
+\item Stuart, Elizabeth A. 2009.
+  \href{http://www.biostat.jhsph.edu/~estuart/Stuart-MatchingMethods-StatSci-Dec09.pdf}
+  {Matching methods for causal inference: A review and a look forward}
+\item Rubin: Chapters 3 to 5.
+\item Rosenbaum, Paul R., 1995. \textit{Observational Studies}. New
+  York: Springer-Verlag. Chapter 3.
+\item Abadie, Alberto and Guido W. Imbens. 2006.
+  \href{http://www.jstor.org/stable/3598929} {Large Sample Properties
+    of Matching Estimators for Average Treatment Effects},
+  \textit{Econometrica} 74: 235-267.
+\item Abadie, Alberto, and Guido W.
+  Imbens. 2011. \href{http://www.hks.harvard.edu/fs/aabadie/bcmp.pdf}{Bias-Corrected Matching Estimators
+    for Average Treatment Effects.} \textit{Journal of Business \&
+    Economic Statistics} 29(1): 1-11.
+\end{itemize}
+
+\emph{Readings: Matching Applications}
+\begin{itemize}
+\item Lyall, Jason. 2010.
+  \href{http://journals.cambridge.org/action/displayFulltext?type=1&pdftype=1&fid=7449380&jid=PSR&volumeId=104&issueId=01&aid=7449372}
+  {Are Co-Ethnics More Effective Counter-Insurgents? Evidence from the
+    Second Chechen War}. \textit{American Political Science Review},
+  104:1 (February 2010): 1-20.
+\item Gordon, Sanford and Gregory Huber. 2007.
+  \href{http://www.nowpublishers.com/article/Details/QJPS-6035} {The
+    Effect of Electoral Competitiveness on Incumbent
+    Behavior}. \textit{Quarterly Journal of Political Science} 2(2): 107-138.
+  % \item Sekhon, J. 2004.
+  %   \href{http://sekhon.polisci.berkeley.edu/papers/SekhonOpticalMatch.pdf}
+  %   {The 2004 Florida Optical Voting Machine Controversy: A Causal
+  %   Analysis Using Matching}. Manuscript. UC Berkeley.
+\item Eggers, Andrew and Jens Hainmueller. 2009.
+  \href{https://web.stanford.edu/~jhain/Paper/APSR2009.pdf} {MPs for Sale?
+    Estimating Returns to Office in Post-War British
+    Politics}. \textit{American Political Science Review}. 103 (4): 513-533.
+\item Gilligan, Michael J. and Ernest J. Sergenti. 2008.
+  \href{http://nowpublishers.com/article/Details/QJPS-7051}
+  {Do UN Interventions Cause Peace? Using Matching to Improve Causal
+    Inference}. \textit{Quarterly Journal of Political Science} 3 (2): 89-122.
+\item Sekhon, J., and R. Titiunik. 2012. \href{http://www-personal.umich.edu/~titiunik/papers/SekhonTitiunik2012_APSR.pdf}{When Natural
+  Experiments Are Neither Natural nor Experiments}. \textit{American
+    Political Science Review} 106(1): 35-57.
+\item Sen, Maya. 2014. \href{http://scholar.harvard.edu/files/msen/files/sen_ratings.pdf}{How Judicial Qualification Ratings May Disadvantage Minority and Female Candidates}. \textit{Journal of Law and Courts}. 2 (1): 33-65.
+
+  % \item Simmons, B. and Hopkins, D. 2005.
+  %   \href{http://journals.cambridge.org/abstract_S0003055405051920}
+  %   {The Constraining Power of International Treaties: Theory and
+  %   Methods}. American Political Science Review 99(4): 623-631.
+\end{itemize}
+
+\subsection{Propensity Score Methods}
+
+\begin{itemize}
+\item Identification, Propensity Score Estimation, Matching on the Propensity Score, Weighting on the Propensity Score, Reweighting methods
+\end{itemize}
+
+\emph{Readings: Propensity Score Methods Theory}
+\begin{itemize}
+\item Morgan and Winship: Chapter 5. ($\star$)
+\item Rubin: Chapters 10, 11 and 14 (all with Paul
+  R. Rosenbaum).
+\item Imbens, Guido W. 2004.
+  \href{http://www.mitpressjournals.org/doi/abs/10.1162/003465304323023651}{Nonparametric
+    Estimation of Average Treatment Effects under Exogeneity: A
+    Review}. \textit{Review of Economics and Statistics} 86 (1): 4-29.
+\item Hainmueller,
+  Jens. 2012. \href{http://pan.oxfordjournals.org/content/20/1/25.abstract}{Entropy
+    Balancing for Causal Effects: A Multivariate Reweighting Method to
+    Produce Balanced Samples in Observational
+    Studies}. \textit{Political Analysis} 20 (1): 25-46.
+\item Glynn, Adam, and Kevin Quinn. 2010. \href{http://pan.oxfordjournals.org/content/18/1/36}{An Introduction to the Augmented Inverse Propensity Weighted Estimator}. \textit{Political Analysis} 18(1): 36-56.
+\end{itemize}
+
+\emph{Readings: Propensity Score Methods Applications}
+\begin{itemize}
+\item Rubin, Donald B. 2001.  \href{http://www.springerlink.com/index/R445GG1778314228.pdf}{Using Propensity Scores to Help Design Observational Studies: Application
+to the Tobacco Litigation}. \textit{Health Services and Outcomes Research Methodology} 2 (3-4): 169-188.
+\item Blattman, Christopher. 2009. \href{http://www.journals.cambridge.org/abstract_S0003055409090212}{From Violence to Voting: War and Political Participation in Uganda.} \textit{American Political Science Review} 103 (2): 231-247.
+\end{itemize}
+\subsection{Regression}
+
+\begin{itemize}
+\item Agnostic Regression framework, Non-parametric Regression, Identification with Regression
+\end{itemize}
+
+\emph{Readings}
+\begin{itemize}
+\item  Angrist and Pischke: Chapter 3. ($\star$)
+\item Morgan and Winship: Chapters 6-7. ($\star$)
+\item H\"ardle, W and Linton, O. 1994.  \href{http://web.uconn.edu/tripathi/397/Applied%20nonparametric%20methods.pdf} {Applied Nonparametric Methods}, in R. F. Engle and D. L. McFadden eds. \textit{Handbook of Econometrics}, vol. 4. New York: Elsevier Science.
+\item White, H. 1980.  \href{http://www.jstor.org/stable/2526245} {Using Least Squares to Approximate Unknown Regression Functions}. \textit{International Economic Review} 21: 149-170.
+\item Hainmueller, J. and Hazlett, C. 2014. \href{http://pan.oxfordjournals.org/content/early/2013/10/10/pan.mpt019}{Kernel Regularized Least Squares: Reducing Misspecification Bias with a Flexible and Interpretable Machine Learning Approach}. \textit{Political Analysis} 22(2): 143-168.
+2014.
+\end{itemize}
+
+\subsection{Conclusion: Selection on Observables}
+
+\begin{itemize}
+\item Can Non-Experimental Method Recover Causal Effects?
+\end{itemize}
+
+\emph{Readings: Comparison of Experimental and Non-experimental Methods}
+\begin{itemize}
+\item Dehejia, Rajeev H. and Sadek Wahba. 1999.  \href{http://www.jstor.org/stable/2669919} {Causal Effects in Non-Experimental Studies: Re-Evaluating the Evaluation of Training Programs}, \textit{Journal of the American Statistical Association} 94 (448): 1053-1062.
+\item Heckman, James J., Hidehiko Ichimura and Petra Todd. 1998.  \href{http://www.jstor.org/stable/2566973} {Matching as an Econometric
+Evaluation Estimator}, \textit{Review
+of Economic Studies} 65: 261-294.
+\item Shadish, William R., M.H. Clark, and Peter M. Steiner. 2008.  \href{http://stat-athens.aueb.gr/~jpan/Shadish-JASA2008(1334-1356)-17mr09.pdf} {Can Nonrandomized Experiments Yield Accurate Answers? A Randomized Experiment Comparing Random and Nonrandom Assignments}. \textit{Journal of the American Statistical Association} 103 (484): 1334-1344. ($\star$)
+\item Arceneaux, Kevin, Alan S. Gerber, and Donald P. Green. 2006.  \href{http://pan.oxfordjournals.org/cgi/content/abstract/14/1/37} {Comparing Experimental and Matching Methods using a Large-Scale Voter Mobilization Experiment}. \textit{Political Analysis} 14 (1): 1-36.
+\item John Concato, Nirav Shah, and Ralph Horwitz. 2000.  \href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1557642/} {Randomized, Controlled Trials, Observational Studies, and the Hierarchy of Research Designs}.
+\textit{New England Journal of Medicine} 342 (25): 1887-92.
+\item Benson, Kjell and Arthur J. Hartz. 2000.  \href{http://www.nejm.org/doi/full/10.1056/NEJM200006223422506} {A Comparison of Observational Studies and Randomized, Controlled Trials}. \textit{New England Journal of Medicine} 342(25): 1878-86.
+\end{itemize}
+
+
+
+
+\subsection{Sensitivity Analysis}
+
+\begin{itemize}
+\item Nonparametric Bounds
+\item Formal sensitivity tests
+\end{itemize}
+
+\emph{Readings}
+\begin{itemize}
+\item Guido W. Imbens. 2003. \href{http://www.jstor.org/stable/3132212} {Sensitivity to Exogeneity Assumptions in Program Evaluation}. \textit{The American Economic Review} 93 (2): 126--32.
+\item Morgan and Winship: Chapter 12 ($\star$)
+\item Rosenbaum, Paul R. 2002. Observational Studies. Springer-Verlag. 2nd edition. Chapter 4.
+\item Manski, Charles F. 1995. \textit{Identification Problems in the Social Sciences}. Cambridge: Harvard University Press. Chapter 2.
+%\item Joseph Altonji, Todd E. Elder, and Christopher Taber. 2005.  \href{http://aida.wss.yale.edu/seminars/ecm/ecm04/altonji-040428.pdf} {Selection on Observed and Unobserved Variables: Assessing the Effectiveness of Catholic Schools}. \textit{Journal of Political Economy} Vol. 113: 151-184.
+\item VanderWeele, Tyler J. , and Onyebuchi A. Arah. 2011. \href{http://journals.lww.com/epidem/Abstract/2011/01000/Bias_Formulas_for_Sensitivity_Analysis_of.8.aspx}{Bias Formulas for Sensitivity Analysis of Unmeasured Confounding for General Outcomes, Treatments, and Confounders}. \textit{Epidemiology} 22 (1): 42.
+\item Rosenbaum, Paul R. 2009. \href{http://www.tandfonline.com/doi/abs/10.1198/jasa.2009.tm08470}{Amplification of Sensitivity Analysis in Matched Observational Studies}. \textit{Journal of the American Statistical Association} 104 (488): 1398-1405.
+%\item Paul Rosenbaum and Donald Rubin. 1983.  \href{http://www.jstor.org/stable/2345524} {Assessing Sensitivity to an Unobserved Binary Covariate in an Observational Study with Binary Outcome}. Journal of the Royal Statistical Society. Series B (Methodological) 45(2): 212-18.
+%\item Hirano, Keisuke, Guido W. Imbens, Geert Ridder, and Donald B. Rubin. 2001. "Combining panel data sets with attrition and refreshment samples." Econometrica 69 (6).
+\end{itemize}
+
+
+\section{Causal Effects under Selection on Time-Invariant Characteristics}
+
+\subsection{Difference-in-Differences Estimators}
+
+\begin{itemize}
+\item Identification, Estimation, Falsification tests
+\end{itemize}
+
+\emph{Readings: DID Theory}
+\begin{itemize}
+\item  Angrist and Pischke: Chapter 5.2-5.4 ($\star$)
+\item Bertrand, Marianne, Esther Duflo, and Sendhil Mullainathan. 2004.  \href{http://qje.oxfordjournals.org/content/119/1/249.abstract} {How Much
+Should We Trust Differences-in-Differences Estimates?} \textit{Quarterly Journal of
+Economics} 119 (1): 249-275.
+\end{itemize}
+
+\emph{Readings: DID Applications}
+\begin{itemize}
+\item Lyall, Jason. 2009.  \href{http://www.jstor.org/stable/20684590} {Does Indiscriminate Violence Incite Insurgent Attacks?
+Evidence from Chechnya}. \textit{Journal of Conflict Resolution} 53 (3): 331-62.
+\item Card, David. 1990.  \href{http://www.jstor.org/stable/2523702} {The Impact of the Mariel Boatlift on the Miami Labor Market}, \textit{Industrial and Labor Relations Review} 44 (2): 245-257.
+\item Card, David. and Alan B. Krueger. 1994.  \href{http://faculty.smu.edu/Millimet/classes/eco6352/papers/ck.pdf} {Minimum Wages and Employment: A Case Study
+of the Fast-Food Industry in New Jersey and Pennsylvania}," \textit{American Economic
+Review} 84 (4): 772-793.
+\item Bechtel, Michael M. and Jens Hainmueller. 2011. \href{http://onlinelibrary.wiley.com/doi/10.1111/j.1540-5907.2011.00533.x/abstract} {How Lasting Is Voter Gratitude? An Analysis of the Short- and Long-Term Electoral Returns to Beneficial Policy}. \textit{American Journal of Political Science} 55 (4): 852-868.
+\end{itemize}
+
+\subsection{Panel Data Methods}
+
+\begin{itemize}
+\item Fixed Effects and Random Effects Estimation
+\end{itemize}
+
+\emph{Readings: Panel Methods Theory}
+\begin{itemize}
+\item  Angrist and Pischke: Chapter 5.1 ($\star$)
+\item  Angrist and Pischke: Chapter 8 ($\star$)
+\item Bai, Jushan. 2009. \href{http://www.jstor.org/stable/40263859}{Panel data models with interactive fixed effects}. \textit{Econometrica} 77(4): 1229-1279.
+\end{itemize}
+
+\emph{Readings: Panel Methods Applications}
+\begin{itemize}
+\item Ladd, Jonathan McDonald, and Gabriel S. Lenz. 2009.  \href{http://onlinelibrary.wiley.com/doi/10.1111/j.1540-5907.2009.00377.x/abstract} {Exploiting a Rare Communication Shift to Document the Persuasive Power of the News Media}. \textit{American Journal of Political Science} 53 (2): 394-410. ($\star$)
+%\item Cox, Gary W., and William Terry. 2008.  %\href{http://dss.ucsd.edu/~wterry/index.html/research/cox_terry_2008.pdf} {Legislative Productivity in the 93d-105th Congresses}. \textit{Legislative Studies Quarterly} 33(4): 603-16.
+\item Berrebi, Claude. and Esteban F. Klor. 2008.  \href{http://journals.cambridge.org/abstract_S0003055408080246} {Are Voters Sensitive to Terrorism? Direct Evidence from the Israeli Electorate}. \textit{American Political Science Review} 102 (3): 279-301.
+\item Acemoglu, Daron, Simon Johnson, James A. Robinson, and Pierre Yared. 2008. \href{http://www.nber.org/papers/w11205}{Income and Democracy}. \textit{American Economic Review} 98 (3): 808-842.
+\item Hainmueller, Jens and Hangartner, Dominik. 2016. \href{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2022064}{Does Direct Democracy Hurt Immigrant Minorities? Evidence from Naturalization Decisions in Switzerland}. \textit{American Journal of Political Science}.
+
+\end{itemize}
+
+\subsection{Synthetic Control Methods}
+
+\emph{Readings}
+\begin{itemize}
+\item Abadie, Diamond, and Hainmueller. 2010.  \href{http://www.tandfonline.com/doi/abs/10.1198/jasa.2009.ap08746#.Voip1jZh23I} {Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program}. \textit{Journal of the American Statistical Association} 105(490):  493-505.%($\star$)
+
+\item Abadie, Diamond, and Hainmueller. 2014.  \href{https://web.stanford.edu/~jhain/Paper/AJPS2015a.pdf} {Comparative Politics and the Synthetic Control Method}. \textit{American Journal of Political Science}. 59(2): 495?510. %($\star$)
+
+\item Abadie, Alberto and Javier Gardeazabal. 2003.  \href{http://pubs.aeaweb.org/doi/pdfplus/10.1257/000282803321455188} {The Economic Costs of Conflict: A Case Study of the Basque Country}. \textit{American Economic Review} 92 (1). 113-132.
+\end{itemize}
+
+\section{Causal Effects under Selection on Time-variant Characteristics}
+
+\subsection{Instrumental Variables}
+
+\begin{itemize}
+\item Identification: Using Exogenous Variation in Treatment Intake Given by Instruments
+\item Imperfect Compliance in Randomized Studies
+\item Wald Estimator, Local Average Treatment Effects, 2SLS
+\end{itemize}
+
+\emph{Readings: Instrumental Variable Theory}
+\begin{itemize}
+\item  Angrist and Pischke: Chapter 4 ($\star$)
+\item Morgan and Winship: Chapter 8
+\item Morgan and Winship: Chapter 9 ($\star$)
+%\item Angrist, Joshua D., and Alan B. Krueger. 2001.  \href{http://www.jstor.org/stable/2696517} {Instrumental Variables and the Search for Identification: From Supply and Demand to Natural Experiments}.
+\item Angrist, Joshua D., Guido W. Imbens, and Donald B. Rubin. 1996. \href{http://www.jstor.org/stable/2291629}{Identification of Causal Effects Using Instrumental Variables.} \textit{Journal of the American Statistical Association} 91(434): 444-455.
+\item Abadie, Alberto 2003. \href{http://www.hks.harvard.edu/fs/aabadie/gtep.pdf} {Semiparametric instrumental variable estimation of treatment response models}. Journal of Econometrics 113 (2003) 231-263.
+\item Gerber, Alan S., and Donald P. Green. 2012. \textit{Field Experiments}. W. W. Norton. Chapters 5-6.
+\item Sovey, Allison J. and Donald P. Green 2011. \href{http://faculty.smu.edu/millimet/classes/eco6374/papers/sovey\%20green\%202011.pdf}{Instrumental Variables Estimation in Political Science: A Readers’ Guide}. {\it American Journal of Political Science} 55 (1): 188-200.
+\end{itemize}
+
+\emph{Readings: Instrumental Variable Critique}
+\begin{itemize}
+\item Deaton, Angus. 2010. \href{http://pubs.aeaweb.org/doi/abs/10.1257/jel.48.2.424}{Instruments, Randomization, and Learning About Development}. \textit{Journal of Economic Literature} 48(2): 424-455.
+\item Hernan, Miguel A., and James M. Robins. 2006. \href{http://www.jstor.org/stable/20486236?seq=1#page_scan_tab_contents}{Instruments for Causal Inference: An Epidemiologist's Dream?} \textit{Epidemiology} 17(4): 360-72.
+\item Imbens, Guido W. 2010. \href{http://www.jstor.org/stable/20778730}{Better LATE Than Nothing: Some Comments on Deaton (2009) and Heckman and Urzua (2009)}. \textit{Journal of Economic Literature} 48(2): 399-423.
+\end{itemize}
+
+\emph{Readings: Instrumental Variable Applications}
+\begin{itemize}
+\item Holger L. Kern and Jens Hainmueller  \href{https://web.stanford.edu/~jhain/Paper/PA2009.pdf} {Opium for the Masses: How Foreign Free Media Can Stabilize Authoritarian Regimes}. Political Analysis (2009).
+\item  Angrist and Krueger. 2001  \href{http://www.jstor.org/stable/2696517} {Instrumental Variables and the Search for Identification: From Supply and Demand to Natural Experiments}
+\item Acemoglu, Daron, Simon Johnson, and James A. Robinson. 2001.  \href{http://www.jstor.org/stable/2677930} {The Colonial Origins of Comparative Development: An Empirical Investigation}. \textit{American Economic Review} 91(5): 1369-1401.
+\item Clingingsmith, David, Asim Ijaz Khwaja, and Michael Kremer. 2009.  \href{http://qje.oxfordjournals.org/content/124/3/1133.short} {Estimating the Impact of the Hajj: Religion and Tolerance in Islam's Global Gathering}. \textit{Quarterly Journal of Economics} 124(3): 1133-1170.
+\item Hidalgo, F. Daniel, Suresh Naidu, Simeon Nichter, and Neal Richardson. 2010. \href{http://www.mitpressjournals.org/doi/abs/10.1162/REST_a_00007}{Economic Determinants of Land Invasions}. \textit{Review of Economics and Statistics} 92(3): 505-523.
+\item Angrist, Joshua D. 1990.  \href{http://www.jstor.org/stable/2006669} {Lifetime Earnings and the Vietnam Era Draft Lottery: Evidence from Social Security Administrative Records}. \textit{American
+Economic Review} 80(3): 313-336.
+\end{itemize}
+
+
+\subsection{The Regression Discontinuity Design}
+
+\begin{itemize}
+\item Sharp and Fuzzy Designs, Identification, Estimation, Falsification Checks
+\end{itemize}
+
+
+\emph{Readings: RDD Theory}
+\begin{itemize}
+\item Imbens, Guido W., and Thomas Lemieux. 2008.  \href{http://linkinghub.elsevier.com/retrieve/pii/S0304407607001091} {Regression Discontinuity
+Designs: A Guide to Practice}. \textit{Journal of Econometrics} 142 (2): 615-35. (Part
+of special issue on RDD, all of which is of interest.) ($\star$)
+\item  Angrist and Pischke: Chapter 6 ($\star$)
+\item Hahn, Jinyong, Petra Todd and Wilbert Van der Klaauw. 2001.  \href{http://www.jstor.org/stable/2692190} {Identification and Estimation of Treatment Effects with a Regression Discontinuity Design}, \textit{Econometrica} 69 (1): 201-209.
+\end{itemize}
+
+\emph{Readings: RDD Applications}
+\begin{itemize}
+\item Eggers, Andrew, Fowler, Anthony, Hainmueller, Jens, Hall, Andrew B. and Snyder, James M. 2015. \href{http://onlinelibrary.wiley.com/doi/10.1111/ajps.12127/abstract}{On the Validity of the Regression Discontinuity Design for Estimating Electoral Effects: New Evidence from over 40,000 Close Races}. \textit{American Journal of Political Science}  59(1): 259-274 ($\star$).
+%\item Ferraz, C., and F. Finan. 2008.  \href{http://nbn-resolving.de/urn:nbn:de:101:1-2008032608} {Motivating Politicians: The Impacts of Monetary Incentives on Quality and Performance}. Mimeo. 2009 NBER Working paper w14906.
+\item Hidalgo, F. Daniel. 2012. Fraud or Enfranchisement? The Consequences of Electronic Voting for Political Representation in Brazil. Working Paper.
+\item Lee, David S. 2008.  \href{http://linkinghub.elsevier.com/retrieve/pii/S0304407607001121} {Randomized Experiments from Non-random Selection in U.S. House Elections}. \textit{Journal of Econometrics} 142 (2): 675-697.  ($\star$)
+%\item  Eggers and Hainmueller:  \href{http://www.mit.edu/~jhainm/Paper/mpfs.pdf} {The Value of Political Power: Estimating Returns to Office in Post-War British Politics}.
+%\item Butler, Daniel M., and Matthew J. Butler. 2006.  \href{http://pan.oxfordjournals.org/cgi/content/full/14/4/439?ijkey=RxlTLbaIFPaC8T9&keytype=ref} {Splitting the Difference? Causal Inference and Theories of Split-Party Delegations}. \textit{Political Analysis} 14(4): 439-55.
+\item Hainmueller, Jens, and Holger Lutz Kern. 2008. \href{http://www.sciencedirect.com/science/article/pii/S0261379407000996} {Incumbency as a Source of Spillover Effects in Mixed Electoral Systems: Evidence from a Regression-
+Discontinuity Design}. \textit{Electoral Studies} 27: 213-27.
+\item Caughey, Devin, and Jasjeet Sekhon. 2011. \href{http://pan.oxfordjournals.org/content/19/4/385.abstract}{Elections and the Regression Discontinuity Design: Lessons From Close U.S. House Races, 1942-2008}. \textit{Political Analysis} 19 (4): 385-408.
+\item Eggers, Andrew, Freier, Ronny, Grembi, Veronica and Nannicini, Tommaso. 2016. \href{http://andy.egge.rs/papers/EggersFreierGrembiNannicini_pop_thresholds.pdf}{Regression Discontinuity Designs Based on Population Thresholds: Pitfalls and Solutions}.
+\item Calonico, Sebastian, Cattaneo, Matias, and Titiunik, Rocio. 2014. \href{http://onlinelibrary.wiley.com/doi/10.3982/ECTA11757/abstract}{Robust Nonparametric Confidence Intervals for Regression-Discontinuity Designs} \textit{Econometrica} 82(6): 2295-2326.
+\item Hainmueller, Jens, Hall, Andrew, and Snyder, James. 2015. \href{http://www.jstor.org/stable/10.1086/681238}{Assessing the External Validity of Election RD Estimates: An Investigation of the Incumbency Advantage} \textit{Journal of Politics}. 77(3): 707-720.
+\item Hainmueller, Jens, Hangartner, Dominik, and Pietrantuono, Giuseppe. 2015. \href{http://www.pnas.org/content/112/41/12651.abstract?sid=8efc8281-95c9-4973-9a2c-bae8df47fd4a}{Naturalization Fosters the Long-Term Political Integration of Immigrants}. \textit{Proceedings of the National Academy of Sciences}. 112 (41) 12651-12656.
+\item Bertanha M, Imbens G. \href{http://www.nber.org/papers/w20773}{External Validity in Fuzzy Regression Discontinuity Designs}. 2014. Working Paper.
+
+\end{itemize}
+
+\section{Distributional Effects}
+
+\subsection{Quantile Regression}
+
+\emph{Readings}
+\begin{itemize}
+\item Angrist and Pischke: Chapter 7 ($\star$)
+\item Koenker, Roger and Kevin F. Hallock. 2001.  \href{http://www.jstor.org/stable/2696522} {Quantile Regression}. \textit{Journal of Economic Perspectives} 15 (4): 143-156($\star$)
+\item Bruenig, Christian and Brian D. Jones. 2011. \href{http://pan.oxfordjournals.org/content/19/1/103.full.pdf+html}{Stochastic Process Methods with an Application to Budgetary Data}. \textit{Political Analysis} 19 (1): 103-117
+\end{itemize}
+
+\subsection{Distributional Effects in Difference-in-Differences}
+
+\emph{Readings}
+\begin{itemize}
+\item Athey, Susan and Guido W. Imbens. 2006.  \href{http://www.jstor.org/stable/3598807} {Identification and Inference in Nonlinear Difference-in-Differences Models}. \textit{Econometrica} 74 (2): 431--497.($\star$)
+\end{itemize}
+
+
+\subsection{Instrumental Variables for Quantile Effects}
+%
+\emph{Readings}
+\begin{itemize}
+\item Abadie, Alberto, Joshua Angrist, and Guido Imbens. 2002. \href{http://www.hks.harvard.edu/fs/aabadie/qtep.pdf} {Instrumental Variables Estimates of the Effect of Subsidized Training on the Quantiles of Trainee Earnings}. \textit{Econometrica} 70 (1): 91--117.
+
+\end{itemize}
+
+\clearpage
+\section*{Model Based Inference}
+\setcounter{section}{0}
+
+\subsection*{Books}
+\begin{itemize}
+\item[-] Agresti, Alan. 2015.  \emph{Foundations of Linear and Generalized Linear Models.} Wiley. (Hereafter AA)
+\item[-] Wasserman, Larry. 2013.  \emph{All of Statistics: A Concise Course in Statistical Inference}. Springer. (Hereafter AS) 
+\item[-] Wasserman, Larry. 2006.  \emph{All of Nonparametric Statistics} (Hereafter ANS)
+\item[-] Degroot, Morris and Mark Schervish. Probability and Statistics
+\item[-] Bertsekas, Dimitri P and Tsitsiklis, John.  Introduction to Probability Theory
+\item[-] Hastie, Tibshirani, and Friedman.  2009.  \emph{The Elements of Statistical Learning: Data Mining, Inference, and Prediction} 2nd edition.  Springer.  (Hereafter ES)
+\end{itemize}
+
+
+\section{Likelihood Theory of Inference}
+\begin{itemize}
+\item Likelihood curve/interpretation
+\item Asymptotic property of MLE estimates
+\item Invariance, Cramer-Rao Lower Bound
+\end{itemize}
+
+\textit{Required Readings}
+\begin{itemize}
+\item AS Chapter 9
+\item AA 4.1-4.4
+\item Degroot and Schervish 6.1-6.5 
+\end{itemize}
+
+\section{Generalized Linear Models}
+\begin{itemize}
+\item Models for normally distributed outcomes
+\item Probit/Logit for binary choice
+\item Ordered probit, multinomial probit and multinomial logit
+\item Event count and survival analysis models
+\item Measures of model fit 
+\item Likelihood ratio test and Wald Test
+\end{itemize}
+\textit{Required Readings}
+\begin{itemize}
+\item AA Chapter 4.4-4.6, 5, 6.1, 6.2, and 7
+\item AS Chapter 10.1-10.3, 10.6, 10.8
+\end{itemize}
+
+\section{Machine Learning Methods}
+\begin{itemize}
+\item LASSO
+\item Ridge
+\item Boosting/Bagging
+\end{itemize}
+
+\textit{Required Readings}
+\begin{itemize}
+\item[-] Elements of Statistical Learning, 3.4.1-3.4.2
+\item[-] Hainmueller, Jens and Chad Hazlett. 2014.  ``Kernel Regularized Least Squares: Reducing Misspecification Bias with a Flexible and Interpretable Machine Learning Approach" \emph{Political Analysis}. 22, 2. 143-168. 
+\end{itemize}
+
+\section{Nonparametric Estimation}
+
+\begin{itemize}
+\item Density estimation
+\item Bandwidth selection 
+\item nonparametric regression
+\end{itemize}
+
+
+\begin{itemize}
+\item[-] AS Chapter 6, 20
+\item[-] ANS Chapter 6
+\item[-] Beck, Nathaniel and Simon Jackman. 1998. ``Beyond Linearity by Default: Generalized Additive Models". \emph{American Journal of Political Science} 42, 2. 596-627.
+\end{itemize}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
